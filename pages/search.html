@@ -12,13 +12,20 @@
 <br>
 <br>
 
+<style>
+    label{
+        width: 120px;
+        display: inline-block;
+    }
+</style>
+
+
 <form action="https://fom.in.ua/echo">
 
 <!--Body type  -->
 
     <label for="body_type"><strong><ins>Body type:</ins></strong></label> 
-    <br><br>
-    <select id="body_type" size="4" name="body type" multiple style="width: 50%;">
+    <select id="body_type" size="3" name="body type" multiple style="width: 250px;">
         <option value="Crossover">Crossover</option>
         <option value="Sedan">Sedan</option>
         <option value="Mini">Mini</option>
@@ -29,21 +36,39 @@
     </select>
     <br><br>
 
+<!--Country of origin  -->
+
+    <label for="origin"><strong><ins>Country:</ins></strong></label>
+    <select id="origin" name="origin" style="width: 250px;">
+        <option value="Japan">Japan</option>
+        <option value="Germany">Germany</option>
+        <option value="Korea">Korea</option>
+        <option value="USA">USA</option>
+        <option value="Italy">Italy</option>
+    </select>
+    <br>       
+
 <!--Price range  -->
 
-    <p><strong><ins>Price range:</ins></strong></p>
-    <p>from: <input type="number" min="0" step="100" placeholder="min" name="minimum price">
+    <p><strong><ins>Price range:</ins></strong>
+        from: <input type="number" min="0" step="100" placeholder="min" name="minimum price">
         to: <input type="number" min="0" step="100" placeholder="max" name="maximum price">
         in: <select name="currency">
             <option value="USD">USD</option>
             <option value="UAH">UAH</option>
         </select>
     </p> 
-    <br>
+    
+
+<!--Year  -->    
+
+    <p><strong><ins>Year:</ins></strong> from: <input type="number" min="1980" max="2022" step="1" placeholder="1980" name="minimum year">
+    to: <input type="number" min="1980" max="2022" step="1" placeholder="2022" name="maximum year">
+    <br>    
 
 <!--Make (with logos) -->
 
-<p><strong><ins>Make:</ins></strong></p><br>
+<p><strong><ins>Make:</ins></strong></p>
 
     <input type="checkbox" id="honda" name="make" value="Honda" />
     <label for="honda"><img src="../images/honda.jpg" width="100" alt="honda" /></label>
@@ -69,31 +94,13 @@
     <input type="checkbox" id="huyndai" name="make" value="Huyndai"/>
     <label for="huyndai"><img src="../images/hyundai.jpg" width="100" alt="huyndai"/></label>
 
-    <br><br>
+    <br><br><br>
 
-<!--Country of origin  -->
-
-    <label for="origin"><strong><ins>Country of origin:</ins></strong></label> <br><br>
-    <select id="origin" name="origin" style="width: 50%;">
-        <option value="Japan">Japan</option>
-        <option value="Germany">Germany</option>
-        <option value="Korea">Korea</option>
-        <option value="USA">USA</option>
-        <option value="Italy">Italy</option>
-    </select>
-    <br><br>
-
-<!--Year  -->    
-
-    <p><strong><ins>Year:</ins></strong></p>
-    <p>from: <input type="number" min="1980" max="2022" step="1" placeholder="1980" name="minimum year">
-        to: <input type="number" min="1980" max="2022" step="1" placeholder="2022" name="maximum year">
-        <br> <br>
     
 <!--Fuel type  -->
 
-    <label for="fuel_type"><strong><ins>Fuel type:</ins></strong></label> <br><br>
-    <select id="fuel_type" name="fuel type" style="width: 50%;">
+    <label for="fuel_type"><strong><ins>Fuel type:</ins></strong></label>
+    <select id="fuel_type" name="fuel type" style="width: 100px;">
         <option value="Diesel">Diesel</option>
         <option value="CNG">CNG</option>
         <option value="Electric">Electric</option>
@@ -101,11 +108,11 @@
         <option value="Hybrid">Hybrid</option>
         <option value="LPG">LPG</option>
     </select>
-    <br><br>
+    <br>
 
 <!--Transmission  -->
 
-    <p><strong><ins>Transmission:</ins></strong></p>
+    <p><strong><ins>Transmission:</ins></strong>
     <label>
         <input type="checkbox" value="Manual" name="transmission">
         Manual
@@ -114,39 +121,36 @@
         <input type="checkbox" value="Automatic" name="transmission">
         Automatic
     </label>
-    <label>
-        <input type="checkbox" value="Semi-Automatic" name="transmission">
-        Semi-Automatic
-    </label>
+</p>
 
 <!--Condition -->
 
-    <p><strong><ins>Condition (mileage):</ins></strong></p>
+    <p><strong><ins>Condition (mileage):</ins></strong>
     <label>
         <input type="radio" value="2000- mi" name="condition">
-        Under 2000 mi
+        Under 2000 m
     </label>
     <label>
         <input type="radio" value="2000-5000 mi" name="condition">
-        2000-5000 mi
+        2000-5000 m
     </label>
     <label>
         <input type="radio" value="5000+ mi" name="condition">
-        Over 5000 mi
+        Over 5000 m
     </label>
-    <br><br>
+    </p>
 
 <!--Colour (colour palette attribute)  -->
 
-    <p><strong><ins>Choose the colour:</ins></strong></p>
-    <input type="color" name="colour">
-    <br><br>
+    <p><strong><ins>Choose the colour:</ins></strong>
+        <input type="color" name="colour"> </p>
+    <br>
 
 
 <!--Comfort (?)  -->
 
-    <label for="comfort"><strong><ins>Comfort feature:</ins></strong></label> <br><br>
-    <select id="comfort" size="3" name="comfort feature" multiple style="width: 50%;">
+    <label for="comfort"><strong><ins>Comfort feature:</ins></strong></label>
+    <select id="comfort" size="3" name="comfort feature" multiple style="width: 250px;">
         <option value="Leather interior">Leather interior</option>
         <option value="Climate-control">Climate-control</option>
         <option value="Power sunroof">Power sunroof</option>
