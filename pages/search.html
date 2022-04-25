@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose your vehicle</title>
+</head>
+<body>
+    
+<h1>Hi! Here you can choose the features of your <ins>affordable</ins> dream vehicle:</h1>
+<br>
+<br>
+
+<form action="https://fom.in.ua/echo">
+
+<!--Body type  -->
+
+    <label for="body_type"><strong><ins>Body type:</ins></strong></label> 
+    <br><br>
+    <select id="body_type" size="4" name="body type" multiple style="width: 50%;">
+        <option value="Crossover">Crossover</option>
+        <option value="Sedan">Sedan</option>
+        <option value="Mini">Mini</option>
+        <option value="Pickup">Pickup</option>
+        <option value="Jeep">Jeep</option>
+        <option value="Hatchback">Hatchback</option>
+        <option value="Coupe">Coupe</option>
+    </select>
+    <br><br>
+
+<!--Price range  -->
+
+    <p><strong><ins>Price range:</ins></strong></p>
+    <p>from: <input type="number" min="0" step="100" placeholder="min" name="minimum price">
+        to: <input type="number" min="0" step="100" placeholder="max" name="maximum price">
+        in: <select name="currency">
+            <option value="USD">USD</option>
+            <option value="UAH">UAH</option>
+        </select>
+    </p> 
+    <br>
+
+<!--Make (with logos) -->
+
+<p><strong><ins>Make:</ins></strong></p><br>
+
+    <input type="checkbox" id="honda" name="make" value="Honda" />
+    <label for="honda"><img src="../images/honda.jpg" width="100" alt="honda" /></label>
+
+    <input type="checkbox" id="toyota" name="make" value="Toyota" />
+    <label for="toyota"><img src="../images/toyota.jpg" width="100" alt="toyota" /></label>
+
+    <input type="checkbox" id="nissan" name="make" value="Nissan" />
+    <label for="nissan"><img src="../images/nissan.jpg" width="100" alt="nissan" /></label>
+
+    <input type="checkbox" id="dodge" name="make" value="Dodge"/>
+    <label for="dodge"><img src="../images/dodge.jpg" width="100" alt="dodge"/></label>
+    <br>
+    <input type="checkbox" id="mercedes" name="make" value="Mercedes"/>
+    <label for="mercedes"><img src="../images/mercedes-benz.jpg" width="100" alt="mercedes"/></label>
+
+    <input type="checkbox" id="volkswagen" name="make" value="Volkswagen"/>
+    <label for="volkswagen"><img src="../images/volkswagen.jpg" width="100" alt="volkswagen"/></label>
+
+    <input type="checkbox" id="ford" name="make" value="Ford"/>
+    <label for="ford"><img src="../images/ford.jpg" width="100" alt="ford"/></label>
+
+    <input type="checkbox" id="huyndai" name="make" value="Huyndai"/>
+    <label for="huyndai"><img src="../images/hyundai.jpg" width="100" alt="huyndai"/></label>
+
+    <br><br>
+
+<!--Country of origin  -->
+
+    <label for="origin"><strong><ins>Country of origin:</ins></strong></label> <br><br>
+    <select id="origin" name="origin" style="width: 50%;">
+        <option value="Japan">Japan</option>
+        <option value="Germany">Germany</option>
+        <option value="Korea">Korea</option>
+        <option value="USA">USA</option>
+        <option value="Italy">Italy</option>
+    </select>
+    <br><br>
+
+<!--Year  -->    
+
+    <p><strong><ins>Year:</ins></strong></p>
+    <p>from: <input type="number" min="1980" max="2022" step="1" placeholder="1980" name="minimum year">
+        to: <input type="number" min="1980" max="2022" step="1" placeholder="2022" name="maximum year">
+        <br> <br>
+    
+<!--Fuel type  -->
+
+    <label for="fuel_type"><strong><ins>Fuel type:</ins></strong></label> <br><br>
+    <select id="fuel_type" name="fuel type" style="width: 50%;">
+        <option value="Diesel">Diesel</option>
+        <option value="CNG">CNG</option>
+        <option value="Electric">Electric</option>
+        <option value="Petrol">Petrol</option>
+        <option value="Hybrid">Hybrid</option>
+        <option value="LPG">LPG</option>
+    </select>
+    <br><br>
+
+<!--Transmission  -->
+
+    <p><strong><ins>Transmission:</ins></strong></p>
+    <label>
+        <input type="checkbox" value="Manual" name="transmission">
+        Manual
+    </label>
+    <label>
+        <input type="checkbox" value="Automatic" name="transmission">
+        Automatic
+    </label>
+    <label>
+        <input type="checkbox" value="Semi-Automatic" name="transmission">
+        Semi-Automatic
+    </label>
+
+<!--Condition -->
+
+    <p><strong><ins>Condition (mileage):</ins></strong></p>
+    <label>
+        <input type="radio" value="2000- mi" name="condition">
+        Under 2000 mi
+    </label>
+    <label>
+        <input type="radio" value="2000-5000 mi" name="condition">
+        2000-5000 mi
+    </label>
+    <label>
+        <input type="radio" value="5000+ mi" name="condition">
+        Over 5000 mi
+    </label>
+    <br><br>
+
+<!--Colour (colour palette attribute)  -->
+
+    <p><strong><ins>Choose the colour:</ins></strong></p>
+    <input type="color" name="colour">
+    <br><br>
+
+
+<!--Comfort (?)  -->
+
+    <label for="comfort"><strong><ins>Comfort feature:</ins></strong></label> <br><br>
+    <select id="comfort" size="3" name="comfort feature" multiple style="width: 50%;">
+        <option value="Leather interior">Leather interior</option>
+        <option value="Climate-control">Climate-control</option>
+        <option value="Power sunroof">Power sunroof</option>
+        <option value="Seat heating">Seat heating</option>
+        <option value="Navigator">Navigator</option>
+        
+    </select>
+    <br><br>
+
+<br>
+<input type="submit" value="Set parameters">
+</form>
+
+<br><br><br>
+    <p>
+    Still don`t have an account? Click <a href="../index.html" target="blank">here</a> to sign up
+    </p>
+
+    <p>
+    Wanna log in? Click <a href="./login.html" target="blank">here</a> to log in
+    </p>
+
+</body>
+</html>
