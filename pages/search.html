@@ -9,23 +9,15 @@
 <body>
     
 <h1>Hi! Here you can choose the features of your <ins>affordable</ins> dream vehicle:</h1>
-<br>
-<br>
-
-<style>
-    label{
-        width: 120px;
-        display: inline-block;
-    }
-</style>
+<br><br>
 
 
 <form action="https://fom.in.ua/echo">
 
 <!--Body type  -->
 
-    <label for="body_type"><strong><ins>Body type:</ins></strong></label> 
-    <select id="body_type" size="3" name="body type" multiple style="width: 250px;">
+    <label for="body_type" style="padding-right:50px;"><strong><ins>Body type:</ins></strong></label> 
+    <select id="body_type" size="3" name="body type" multiple style="width: 200px;">
         <option value="Crossover">Crossover</option>
         <option value="Sedan">Sedan</option>
         <option value="Mini">Mini</option>
@@ -38,7 +30,7 @@
 
 <!--Country of origin  -->
 
-    <label for="origin"><strong><ins>Country:</ins></strong></label>
+    <label for="origin" style="padding-right:60px;"><strong><ins>Country:</ins></strong></label>
     <select id="origin" name="origin" style="width: 250px;">
         <option value="Japan">Japan</option>
         <option value="Germany">Germany</option>
@@ -50,7 +42,7 @@
 
 <!--Price range  -->
 
-    <label for="price"><strong><ins>Price range:</ins></strong></label>
+    <label for="price" style="padding-right:40px;"><strong><ins>Price range:</ins></strong></label>
 
     from: <input type="number" id="price" min="0" step="100" placeholder="min" name="minimum price">
         to: <input type="number" min="0" step="100" placeholder="max" name="maximum price">
@@ -63,7 +55,7 @@
 
 <!--Year  -->    
 
-    <label for="year"><strong><ins>Year:</ins></strong></label>
+    <label for="year" style="padding-right:85px;"><strong><ins>Year:</ins></strong></label>
 
     from: <input type="number" id="year" min="1980" max="2022" step="1" placeholder="1980" name="minimum year">
     to: <input type="number" min="1980" max="2022" step="1" placeholder="2022" name="maximum year">
@@ -101,7 +93,7 @@
     
 <!--Fuel type  -->
 
-    <label for="fuel_type"><strong><ins>Fuel type:</ins></strong></label>
+    <label for="fuel_type" style="padding-right:50px;"><strong><ins>Fuel type:</ins></strong></label>
     <select id="fuel_type" name="fuel type" style="width: 100px;">
         <option value="Diesel">Diesel</option>
         <option value="CNG">CNG</option>
@@ -114,7 +106,7 @@
 
 <!--Transmission  -->
 
-    <label for="transmission"><strong><ins>Transmission:</ins></strong></label>
+    <label for="transmission" style="padding-right:20px;"><strong><ins>Transmission:</ins></strong></label>
 
     <label>
         <input id="transmission" type="checkbox" value="Manual" name="transmission">
@@ -146,14 +138,14 @@
 
 <!--Colour (colour palette attribute)  -->
 
-    <label for="colour"><strong><ins>Choose the colour:</ins></strong></label>
+    <label for="colour" style="padding-right:5px;"><strong><ins>Choose the colour:</ins></strong></label>
     <input type="color" name="colour" id="colour" > 
     <br><br>
 
 
 <!--Comfort (?)  -->
 
-    <label for="comfort"><strong><ins>Comfort feature:</ins></strong></label>
+    <label for="comfort" style="padding-right:5px;"><strong><ins>Comfort feature:</ins></strong></label>
     <select id="comfort" size="3" name="comfort feature" multiple style="width: 250px;">
         <option value="Leather interior">Leather interior</option>
         <option value="Climate-control">Climate-control</option>
@@ -165,7 +157,7 @@
     <br><br>
 
 <br>
-<input type="submit" value="Set parameters">
+<input type="submit" value="Set parameters" style="width: 30%;">
 </form>
 
 <br><br><br>
